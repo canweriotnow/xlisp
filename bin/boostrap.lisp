@@ -1,0 +1,5 @@
+(load "quicklisp.lisp")
+(quicklisp-quickstart:install :path ".")
+(load "quicklisp/setup.lisp")
+(ql:quickload "lisp-unit")
+(save-lisp-and-die "xlisp-test.core")

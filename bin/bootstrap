@@ -2,13 +2,4 @@
 
 sudo apt-get install sbcl
 curl -O http://beta.quicklisp.org/quicklisp.lisp
-
-sbcl --lisp quicklisp.lisp \
-     --eval '(quicklisp-quickstart:install)' \
-     --eval '(sb-ext:quit)'
-
-sbcl --lisp quicklisp/setup.lisp \
-     --eval '(ql:quickload "lisp-unit")' \
-     --eval '(sb-ext:quit)'
-
-
+sbcl --script bin/bootstrap.lisp
